@@ -1,4 +1,4 @@
-package com.datajpa.demo;
+package com.datajpa.demo1;
 
 public class DemoException {
     public static void main(String[] args) {

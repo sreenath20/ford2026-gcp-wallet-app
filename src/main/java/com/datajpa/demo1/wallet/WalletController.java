@@ -1,6 +1,5 @@
-package com.datajpa.demo.wallet;
+package com.datajpa.demo1.wallet;
 
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

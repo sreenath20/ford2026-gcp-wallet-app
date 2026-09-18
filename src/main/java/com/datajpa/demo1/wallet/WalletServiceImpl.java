@@ -1,8 +1,8 @@
-package com.datajpa.demo.wallet;
+package com.datajpa.demo1.wallet;
 
-import com.datajpa.demo.transaction.Transaction;
-import com.datajpa.demo.transaction.TransactionRepository;
-import com.datajpa.demo.transaction.TransactionType;
+import com.datajpa.demo1.transaction.Transaction;
+import com.datajpa.demo1.transaction.TransactionRepository;
+import com.datajpa.demo1.transaction.TransactionType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

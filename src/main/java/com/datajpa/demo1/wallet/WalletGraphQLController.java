@@ -1,4 +1,4 @@
-package com.datajpa.demo.wallet;
+package com.datajpa.demo1.wallet;
 
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.MutationMapping;

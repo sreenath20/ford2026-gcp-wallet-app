@@ -1,4 +1,4 @@
-package com.datajpa.demo.jpa_mappings;
+package com.datajpa.demo1.jpa_mappings;
 
 import jakarta.persistence.*;
 

@@ -1,4 +1,4 @@
-package com.datajpa.demo.transaction;
+package com.datajpa.demo1.transaction;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
