@@ -1,4 +1,4 @@
-package com.datajpa.demo.wallet;
+package com.datajpa.demo1.wallet;
 
 import java.util.List;
 

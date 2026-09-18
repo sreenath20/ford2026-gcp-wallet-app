@@ -1,6 +1,6 @@
-package com.datajpa.demo.wallet;
+package com.datajpa.demo1.wallet;
 
-import com.datajpa.demo.transaction.Transaction;
+import com.datajpa.demo1.transaction.Transaction;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 

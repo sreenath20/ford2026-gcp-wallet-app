@@ -1,4 +1,4 @@
-package com.datajpa.demo;
+package com.datajpa.demo1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

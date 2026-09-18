@@ -1,4 +1,4 @@
-package com.datajpa.demo.transaction;
+package com.datajpa.demo1.transaction;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
