@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("v1/wallets")
-@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin// allows public origins
 public class WalletController {
 
     @GetMapping
