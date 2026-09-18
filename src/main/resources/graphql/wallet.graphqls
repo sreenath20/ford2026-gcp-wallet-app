@@ -1,0 +1,53 @@
+type Wallet {
+    id: ID!
+    name: String!
+    balance: Float!
+    password:String!
+    email:String!
+    createdOnDate:String!
+    transactions: [Transaction!]
+}
+
+type Transaction {
+    id: ID!
+    type: TransactionType!
+    amount: Float!
+    date: String!
+}
+
+enum TransactionType {
+    DEBIT
+    CREDIT
+}
+
+type Query {
+
+    wallet(id: ID!): Wallet
+
+    wallets: [Wallet!]
+
+    transactions(walletId: ID!): [Transaction!]
+}
+
+type Mutation {
+
+    createWallet(
+        ownerName: String!
+    ): Wallet
+
+    deposit(
+        walletId: ID!
+        amount: Float!
+    ): Wallet
+
+    withdraw(
+        walletId: ID!
+        amount: Float!
+    ): Wallet
+
+    transfer(
+        fromWalletId: ID!
+        toWalletId: ID!
+        amount: Float!
+    ): String
+}
