@@ -1,8 +1,8 @@
-package com.datajpa.demo.wallet;
+package com.datajpa.demo1.wallet;
 
-import com.datajpa.demo.transaction.Transaction;
-import com.datajpa.demo.transaction.TransactionRepository;
-import com.datajpa.demo.transaction.TransactionType;
+import com.datajpa.demo1.transaction.Transaction;
+import com.datajpa.demo1.transaction.TransactionRepository;
+import com.datajpa.demo1.transaction.TransactionType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -85,7 +85,7 @@ public class WalletServiceImpl implements WalletService { // IS-A
         Transaction debitTransaction = new Transaction(); // Transient
         debitTransaction.setDate(LocalDate.now());
         debitTransaction.setAmount(amount);
-        debitTransaction.setType(TransactionType.DEBIT);
+//        debitTransaction.setType(TransactionType.DEBIT);
         debitTransaction = this.transactionRepository.save(debitTransaction);
         fromWallet.getTransactions().add(debitTransaction);
 
@@ -93,7 +93,9 @@ public class WalletServiceImpl implements WalletService { // IS-A
         toWallet.setBalance(toBalance + amount);
         // Builder pattern
         Transaction crediTransaction = Transaction.builder().date(LocalDate.now())
-                .amount(amount).type(TransactionType.CREDIT).build();
+                .amount(amount)
+//                .type(TransactionType.CREDIT)
+                .build();
         crediTransaction = this.transactionRepository.save(crediTransaction);
         toWallet.getTransactions().add(crediTransaction);
         return true;

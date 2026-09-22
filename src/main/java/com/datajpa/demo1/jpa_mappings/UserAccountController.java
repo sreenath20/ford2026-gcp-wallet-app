@@ -1,7 +1,6 @@
-package com.datajpa.demo.jpa_mappings;
+package com.datajpa.demo1.jpa_mappings;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

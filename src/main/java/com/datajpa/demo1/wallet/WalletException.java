@@ -1,4 +1,4 @@
-package com.datajpa.demo.wallet;
+package com.datajpa.demo1.wallet;
 // Custom or user defined exception
 public class WalletException extends RuntimeException { // unchecked by compiler
     public WalletException(String message) {

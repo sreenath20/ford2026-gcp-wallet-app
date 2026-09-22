@@ -1,9 +1,7 @@
-package com.datajpa.demo.wallet;
+package com.datajpa.demo1.wallet;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
