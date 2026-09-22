@@ -1,9 +1,6 @@
 package com.datajpa.demo1.transaction;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -16,10 +13,11 @@ import java.time.LocalDate;
 @Builder
 public class Transaction {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private Double amount;
     private LocalDate date;
     private String UPIDetails;
-    private TransactionType type;
+//    @Enumerated(EnumType.STRING)
+//    private TransactionType type;
 }
